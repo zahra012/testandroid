@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>asdsa</title>
+
+    <script>
+            function tambah() {
+        var a1 = document.getElementById('nilai1').value;
+        var a2 = document.getElementById('nilai2').value;
+            var a11 = parseFloat(a1);
+            var a12 = parseFloat(a2);
+            //var hasilnya = a11 + a22;
+        document.getElementById('hasil').value = a11 + a12;
+    }
+            function kali() {
+        var a1 = document.getElementById('nilai1').value;
+        var a2 = document.getElementById('nilai2').value;
+            var a11 = parseFloat(a1);
+            var a12 = parseFloat(a2);
+            //var hasilnya = a11 + a22;
+        document.getElementById('hasil').value = a11 * a12;
+    }     
+             function bagi() {
+        var a1 = document.getElementById('nilai1').value;
+        var a2 = document.getElementById('nilai2').value;
+            var a11 = parseFloat(a1);
+            var a12 = parseFloat(a2);
+            //var hasilnya = a11 + a22;
+        document.getElementById('hasil').value = a11 / a12;
+    }     
+          function kurang() {
+        var a1 = document.getElementById('nilai1').value;
+        var a2 = document.getElementById('nilai2').value;
+            var a11 = parseFloat(a1);
+            var a12 = parseFloat(a2);
+            //var hasilnya = a11 + a22;
+        document.getElementById('hasil').value = a11 - a12;
+    }
+        </script>
+</head>
+<body><br><br><center>
+                <label>Kalkulator Sederhana</label><br><br>
+                <label class="narrow-control label-inline" for="nilai1">Angka 1 :</label>
+                <input class="wide-control form-control default" type="text" id="nilai1"><br><br>
+                <div class="table-thing widget uib_w_4 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                <label class="narrow-control label-inline" for="nilai2">Angka 2 :</label>
+                <input class="wide-control form-control default" type="text" id="nilai2">
+            </div>
+            <br>
+<button class="btn widget uib_w_6 btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" onclick="kali()">X</button>&nbsp;
+                <button class="btn widget uib_w_7 btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" onclick="bagi()">:</button>&nbsp;
+                <button class="btn widget uib_w_8 btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" onclick="tambah()">+</button>&nbsp;
+                <button class="btn widget uib_w_8 btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" onclick="kurang()">-</button>&nbsp;
+                <!--<button class="btn widget uib_w_8 btn-danger" data-uib="twitter%20bootstrap/button" data-ver="1" onclick="mod()">Mod</button>&nbsp;
+                <button class="btn widget uib_w_8 btn-warning" data-uib="twitter%20bootstrap/button" data-ver="1" id="^">^</button>&nbsp;
+                <button class="btn widget uib_w_8 btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1" onclick="reset()">C</button>
+                 <div class="table-thing widget uib_w_9 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1"> --><br>
+                <br>
+                <label class="narrow-control label-inline" for="hasil">Hasil :</label>
+                <input class="wide-control form-control default" type="text" id="hasil">
+            </div>
+            <br>
+            <div class="tarea widget uib_w_10 d-margins" data-uib="media/text" data-ver="0" name="uib_w_10">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+</center>
+</body>
+</html>
